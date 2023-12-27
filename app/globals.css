@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&family=Rubik+Lines&family=Rubik+Maps&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+   body {
+    font-family: 'Lato',sans-serif;
+    
+   
+  }
+  body {
+    @apply box-border m-0 p-0 outline-none bg-black overflow-x-hidden scroll-smooth;
+  }
+  h1 {
+    @apply text-4xl leading-6 text-white font-thin ;
+  }
+  p {
+    @apply text-sm leading-10 text-gray-800;
+  }
+
+  button{
+    @apply px-6 py-3 m-2 bg-white text-gray-900 font-bold rounded-md hover:bg-gray-200 duration-300 transition-all;
+  }
+
+  img{
+    @apply object-cover rounded-sm block mx-auto m-2 hover:scale-105 duration-300 transition-all animate-pulse cursor-pointer
+  }
+  .container{
+    @apply px-10 py-5 md:px-20 md:py-10 mx-auto
+  }
+}
+@layer components {
+  .flexCenter {
+    @apply flex justify-center items-center;
+  }
+  .flexBetween {
+    @apply flex justify-between items-center;
+  }
+  .flexEnd {
+    @apply flex justify-end items-center;
+  }
+  .btn {
+    @apply px-6 py-3 m-2 bg-gray-900 text-white rounded-md hover:bg-gray-800 duration-300;
+  }
+}
